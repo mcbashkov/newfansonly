@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" class>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FansOnly</title>
+  <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <!-- ElegentIcon CSS -->
+  <link rel="stylesheet" href="css/elegant-icons.min.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="animate.min.html">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- SwiperJs CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="text/javascript">
+    var _html = document.documentElement;
+    _html.className = _html.className.replace("no-js", "js");
+  </script>
+
+  <style>
+    .preloader {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: #0a0339;
+      z-index: 9999;
+    }
+  </style>
+
+
+</head>
+
+<body style="background-image: url(images/newbg.jpg); background-size: cover;background-repeat: initial;">
+
+
+  <script>
+    // Set the date we're counting down to style="background-image: url(assets2/bgb.jpg); background-size: contain;">
+    var countDownDate = new Date("Mar 01, 2023 19:01:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = " ACTIVE!";
+      }
+    }, 1000);
+  </script>
+
+
+  <header class="header-area">
+    <nav class="navbar navbar-expand-lg menu_three sticky-nav" style="background-color: #010517;">
+      <div class="container-fluid">
+        <a class="navbar-brand header_logo" href="index.html">
+          <img class="main_logo" src="images/logo.png" alt="logo" style="width: 270px;">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="menu_toggle">
+            <span class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="hamburger-cross">
+              <span></span>
+              <span></span>
+            </span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText" style="background-color: #010517;">
+          <ul class="navbar-nav menu mx-auto">
+
+            <li class="nav-item dropdown submenu active">
+              <a href="#features" class="nav-link dropdown-toggle" style="color: #ffffff;">FansOnly</a>
+              <i class="arrow_carrot-right mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
+
+            </li>
+
+            <li class="nav-item dropdown submenu mega-menu active">
+              <a href="#tokenomics" class="nav-link dropdown-toggle" style="color: #ffffff;">Tokenomics</a>
+              <i class="arrow_carrot-right mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
+
+            </li>
+
+            <li class="nav-item dropdown submenu active">
+              <a href="#roadmap" class="nav-link dropdown-toggle" style="color: #ffffff;">Roadmap</a>
+              <i class="arrow_carrot-right mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
+
+            </li>
+
+            <li class="nav-item dropdown submenu active">
+              <a href="#roadmap" class="nav-link dropdown-toggle" style="color: #ffffff;">Links</a>
+              <i class="arrow_carrot-right mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
+              <ul class="dropdown-menu" style="background-color: #010207;border-color: #010207;">
+                <li class="nav-item">
+                  <a href="https://drive.google.com/file/d/1OZRIhCdnbVmBNmj3W-zOhLiuX8tLAdKu/view" class="nav-link"
+                    style="color: #ffffff;">Whitepaper</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://bscscan.com/address/0xf92df3287663d75a36bb390d44329d6224ae3766" class="nav-link"
+                    style="color: #ffffff;">Token contract</a>
+                </li>
+                <li class="nav-item">
+                <li class="nav-item">
+                  <a href="https://www.cyberscope.io/cyberscan?address=0xF92DF3287663d75a36bb390D44329D6224aE3766"
+                    style="color: white;" class="nav-link">Audit report</a>
+                </li>
+            </li>
+          </ul>
+          </li>
+
+          </ul>
+          <div class="right-nav">
+
+            <a href="https://twitter.com/fansonly_xxx" style="color: #ffffff;">Twitter</a>
+            <a href="https://t.me/FansOnlyOfficial" style="color: #ffffff;">Telegram</a>
+            <a class="btn btn-blue"
+              href="https://pancakeswap.finance/swap?outputCurrency=0xAa3ED6E6Ea3Ed78D4d57E373aABD6f54DF5bb508"
+              style="color: #ffffff;background-color: #041c35;border-color: #010207;">Buy $FANS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Area -->
+  <main>
+    <!-- Banner Area -->
+
+    <!-- Features Area Four
+      <br><br><br><br> -->
+
+    <style>
+      @media (max-width: 575px) .billing-clients-area .client-img {
+        width: 60%;
+        margin-bottom: 30px;
+      }
+    </style>
+
+    <section class="features features-area-four section-padding wow fadeInUp animate__fast" style="padding-bottom:0px">
+      <img class="main_logo" src="images/banner.png" alt="logo" onclick="location.href='https://pancakeswap.finance/swap'>
+
+      </section>
+
+    <section class=" billing-services-area pb-140" style="padding-bottom:1px;">
+
+      <style>
+        .servicenow {
+          border-radius: 10px;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          padding: 50px 40px 40px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .servicenow:hover {
+          background-color: #010517;
+        }
+      </style>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="services-title wow fadeInDown text-center mb-50" data-wow-delay="0.2s" style="color: #ee00ff;">
+              FansOnly Ecosystem</h2>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="servicenow wow fadeInLeft" data-wow-delay="0.2s">
+              <img src="images/nft1.jpeg" alt style="width: 60px;">
+              <h3 class="service-item-title" style="color: #ee00ff;">FansOnly SIMULATOR GAME</h3>
+              <p class="service-item-text" style="color: #ffffff;">Open map better than GTA, Sims, even Roblox??? ):
+                yeah online simulator HOTTIES or Famous influencer is our first ambition. You will see the succes of
+                combination of Social Media, Blockchain, and AI in the mmiddle Q2
+                <br><br>
+
+              </p>
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 mx-auto">
+            <div class="servicenow wow fadeInRight" data-wow-delay="0.2s">
+              <img src="images/2.jpg" alt style="width: 60px;height: 55px;">
+              <h3 class="service-item-title" style="color: #ee00ff;">TELEGRAM BOT</h3>
+              <p class="service-item-text" style="color: #ffffff;">Introducing our new AI-powered Telegram Bot, powered
+                by OpenAI! With this bot, you can easily access advanced language processing capabilities. Users will be
+                able to get articulated responses.</p>
+
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 mx-auto">
+            <div class="servicenow wow fadeInRight" data-wow-delay="0.2s">
+              <img src="images/athena.jpeg" alt style="width: 65px; border-radius: 10px;">
+              <h3 class="service-item-title" style="color: #ee00ff;">FansOnly NFTs</h3>
+              <p class="service-item-text" style="color: #ffffff;">High DEMAND of generating Adult images is REAL!! Team
+                already build the ML and soon in 10 days Beta version release. You can see Some results from the
+                FansOnly
+                AI besides and below'
+
+
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+        <br>
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 mx-auto">
+            <div class="servicenow wow fadeInRight" data-wow-delay="0.2s">
+              <img src="images/1.jpg" alt style="width: 64px;height: 65px;">
+              <h3 class="service-item-title" style="color: #ee00ff;">Discord Adult Image Generator</h3>
+              <p class="service-item-text" style="color: #ffffff;">Meet "FansOnly AI"!!! We know your needs guys!! Adult
+                AI Image Generator available on Discord!!! Just in a couple of days!!!
+                <br><br>
+              </p>
+
+            </div>
+          </div>
+
+
+          <!--  <div class="col-lg-4 col-md-6 mt-sm-0 mt-5">
+              <div class="servicenow wow fadeInDown" data-wow-delay="0.2s">
+                <img src="assets2/anti.png" alt="" style="width: 60px;" />
+                <h3 class="service-item-title" style="color: #ee00ff;">Anti-Whale Mechanism</h3>
+                <p class="service-item-text" style="color: #12fcfd;">Anti-Whale mechanism ensures that no single transaction order can amount to more than 2% of the total supply of $FANS. It will prevent from whales price manipulations.</p>
+
+              </div>
+            </div> -->
+
+
+          <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 mx-auto">
+            <div class="servicenow wow fadeInRight" data-wow-delay="0.2s">
+              <img src="images/more.png" alt>
+              <h3 class="service-item-title" style="color: #ee00ff;">More products</h3>
+              <p class="service-item-text" style="color: #ffffff;">More products and features will be released as we
+                progress into the future. To understand FansOnly, kindly read our Whitepaper.
+                <br><br>
+              </p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="billing-features-area pt-120 pb-140" style="padding-bottom:1px;">
+      <style>
+        .tbut {
+          color: #ee00ff;
+          border-radius: 5px;
+          border: 2px solid;
+          border-color: #ee00ff;
+          font-weight: 500;
+          font-size: 18px;
+          padding: 11px 34px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .tbut:hover {
+          background-color: #ee00ff;
+          color: #ffffff;
+        }
+      </style>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="features-img text-center wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="video-box">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/znHIzTL560E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="features-content wow fadeInRight" data-wow-delay="0.2s">
+            <h2 class="features-item-title mb-10" style="color: #ee00ff;">Buy/Sell Taxes 10%</h2>
+            <p class="features-item-text mb-45" style="color: #ffffff;">
+              Each buy/sell and transfer transaction will be charged with a 10% tax, which will be appropriately
+              distributed as:
+            </p>
+            <ul class="features-item-list mb-30">
+              <li style="color: #ffffff;"><i class="icon_check"></i>5% partnership with celeb/influencer/hottest
+                people</li>
+              <li style="color: #ffffff;"><i class="icon_check"></i> 5% Marketing</li>
+            </ul>
+            <a href="https://bscscan.com/address/0xf92df3287663d75a36bb390d44329d6224ae3766" class="tbut" style>
+              See The Holy Sexy & HOT Verified $FANS CA<i class="arrow_right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a id="roadmap"></a>
+    <section class="process-area-3 overflow-hidden pt-140 pb-140">
+      <style>
+        .item-numbersss {
+          display: inline-block;
+          font-family: "Poppins", sans-serif;
+          font-size: 35px;
+          font-weight: 800;
+          line-height: 62px;
+          letter-spacing: 10px;
+          color: #ffffff;
+          margin-bottom: 60px;
+          position: relative;
+        }
+      </style>
+
+
+
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="services-title wow fadeInDown text-center mb-50" data-wow-delay="0.2s" style="color: #ffffff;">
+            Roadmap 2023:</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="process-item-3 pb-105">
+          <div class="row">
+            <div class="col-lg-6 col-md-7">
+              <div class="process-content-3 pt-30 wow fadeInLeft" data-wow-delay="0.2s">
+                <span class="item-numbersss">Initial phase</span>
+                <h3 class="item-title" style="color:#ee00ff">Steps:</h3>
+                <ul style="color:#ee00ff">
+                  <li><i class="far fa-check-circle"></i> Project Idea</li>
+                  <li><i class="far fa-check-circle"></i> Website Launch</li>
+                  <li><i class="far fa-check-circle"></i> Roadmap Release</li>
+                  <li><i class="far fa-check-circle"></i> Development Start</li>
+                  <li><i class="far fa-check-circle"></i> Contract creation on Binance Smart Chain</li>
+                  <li><i class="far fa-check-circle"></i> Token Contract Audit</li>
+                  <li class="disable"><i class="far fa-circle"></i> Marketing and Promotion Campaign start</li>
+
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="process-images-3 wow fadeInRight" data-wow-delay="0.2s">
+
+                <img src="images/13.jpg" alt="Shape" class="shape" style="width: 460px;border-radius: 10px;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="process-item-3 pb-140">
+          <div class="row flex-row-reverse">
+            <div class="col-lg-6 col-md-7">
+              <div class="process-content-3 wow fadeInRight" data-wow-delay="0.2s">
+                <span class="item-numbersss">Launch Phase</span>
+                <h3 class="item-title" style="color:#ee00ff">Steps:</h3>
+                <ul style="color:#ee00ff">
+                  <li class="disable"><i class="far fa-circle"></i> Liquidity Lock on Pinksale (1 year)</li>
+                  <li class="disable"><i class="far fa-circle"></i> Pancakeswap listing</li>
+                  <li class="disable"><i class="far fa-circle"></i> Community Contests start</li>
+                  <li class="disable"><i class="far fa-circle"></i> Whitepaper Release</li>
+                  <li class="disable"><i class="far fa-circle"></i> CoinMarketCap listing</li>
+                  <li class="disable"><i class="far fa-circle"></i> Coingecko listing</li>
+                  <li class="disable"><i class="far fa-circle"></i> Staking and Farming Pools launch</li>
+                  <li class="disable"><i class="far fa-circle"></i> First CEX listing</li>
+                  <li class="disable"><i class="far fa-circle"></i> Influencers Marketing</li>
+                  <li class="disable"><i class="far fa-circle"></i> First Partnerships</li>
+                  <li class="disable"><i class="far fa-circle"></i> 1 MLN MarketCap</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="process-images-3 wow fadeInLeft" data-wow-delay="0.2s">
+                <img src="images/10.jpg" alt="Shape" class="shape" style="width: 460px;border-radius: 10px;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="process-item-3 pb-135">
+          <div class="row">
+            <div class="col-lg-6 col-md-7">
+              <div class="process-content-3 wow fadeInLeft" data-wow-delay="0.2s">
+                <span class="item-numbersss">Grow Phase</span>
+                <h3 class="item-title" style="color:#ee00ff">Steps</h3>
+                <p class="item-text">
+                </p>
+                <ul style="color:#ee00ff">
+                  <li class="disable"><i class="far fa-circle"></i> Massive Digital Marketing </li>
+                  <li class="disable"><i class="far fa-circle"></i> Top 15 Exchange Listing</li>
+                  <li class="disable"><i class="far fa-circle"></i> 5k $NGATiger Holders</li>
+                  <li class="disable"><i class="far fa-circle"></i> Mass Marketing Campaign</li>
+                  <li class="disable"><i class="far fa-circle"></i> Worldwide Christmas Tree Contest</li>
+                  <li class="disable"><i class="far fa-circle"></i> 2 MLN MarketCap</li>
+                  <li class="disable"><i class="far fa-circle"></i> Roadmap Update</li><br><br><br>
+
+                </ul>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="process-images-3 wow fadeInRight" data-wow-delay="0.2s">
+                <img src="images/athena.jpeg" alt="Features Image" class="shape"
+                  style="width: 460px;border-radius: 10px;">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <img src="fonts/shape7.svg" alt="Border Shape" class="shape-border">
+          <span class="point"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="community-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="community-wrapper" style="background-color: #010517;">
+              <div class="community-text">
+                <h3 style="color: #ffffff;">FansOnly Community</h3>
+                <p style="color:#ee00ff">Connect with FansOnly users to learn, support & inspire one another</p>
+              </div>
+              <div class="community-social">
+                <div class="community-social-item">
+                  <a href="https://twitter.com/fansonly_xxx" style="background-color: #010517;">
+                    <img src="images/twitter1.png">
+                    <span style="color:#ee00ff">    FansOnly Twitter</span>
+                  </a>
+                </div>
+                <div class="community-social-item">
+                  <a href="https://t.me/FansOnlyOfficial" style="background-color: #010517;">
+                    <img src="images/telegram1.png">
+                    <span style="color:#ee00ff">    FansOnly Telegram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <footer class="footer-cloud footer-app">
+      <div class="app-footer-top pt-165 pb-110" style="padding-bottom: 40px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4" style="color:#ee00ff">
+              <div class="footer-widget wow fadeInDown" data-wow-delay="0.7s" style="color:#ee00ff">
+
+                <p class="footer-text mb-40" style="color:#ee00ff">Follow us on social media to find out the latest
+                  updates on our progress.</p>
+                <ul class="widget-social-list">
+
+                  <li> <a href="https://discord.gg/QHudFEFaTq"><i style="font-size:36px;color: #ee00ff;"
+                        class="fab fa-discord"></i></a> </li>
+                  <li> <a href="https://www.reddit.com/user/NGATigerBSC"><i style="font-size:36px;color: #ee00ff;"
+                        class="fab fa-reddit-alien"></i></a></li>
+                  <li> <a href="https://medium.com/@ngatigerbs"><i style="font-size:36px;color: #ee00ff;"
+                        class="fab fa-medium-m"></i></a></li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-8" style="color:#ee00ff">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="footer-widget wow fadeInDown" data-wow-delay="0.5s" style="color:#ee00ff">
+                    <h4 class="widget-title" style="color: #ffffff;">Main</h4>
+                    <ul class="widget-link-list" style="color:#ee00ff">
+                      <li><a style="color:#ee00ff" href="#">Home</a></li>
+                      <li><a style="color:#ee00ff" href="#about">About</a></li>
+                      <li><a style="color:#ee00ff" href="#tokenomics">Tokenomics</a></li>
+                      <li><a style="color:#ee00ff" href="#roadmap">Roadmap</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="footer-widget wow fadeInDown" data-wow-delay="0.3s" style="color:#ee00ff">
+                    <h4 class="widget-title" style="color: #ffffff;">Links</h4>
+                    <ul class="widget-link-list" style="color:#ee00ff">
+                      <li><a href="http://bit.ly/FansOnlyWP" style="color:#ee00ff">Whitepaper</a></li>
+                      <li><a style="color:#ee00ff"
+                          href="https://www.cyberscope.io/cyberscan?address=0xF92DF3287663d75a36bb390D44329D6224aE3766">FansOnly
+                          Contract</a></li>
+                      <li><a style="color:#ee00ff" href="#">Audit report</a></li>
+
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="footer-widget wow fadeInDown" data-wow-delay="0.5s">
+                    <h4 class="widget-title" style="color: #f4f4f4;">Support</h4>
+                    <ul class="widget-link-list">
+                      <li><a style="color:#ee00ff" href="#">support@fansonly.in</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright pb-50">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-2">
+
+            </div>
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <p class="copyright-text float-md-end wow fadeInDown" data-wow-delay="0.2s" style="color:#ee00ff">
+                Copyright 2023, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area -->
+
+    <!--Scroll to top-->
+    <a href="#" class="scrollToTop">
+      <img src="images/scrollup.png" alt>
+    </a>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- TweenMax -->
+    <script src="js/TweenMax.min.js"></script>
+    <!-- ScrollMagic -->
+    <script src="js/ScrollMagic.js"></script>
+    <!-- animation.gsap -->
+    <script src="js/animation.gsap.js"></script>
+    <!-- debug.addIndicators -->
+    <script src="js/debug.addIndicators.min.js"></script>
+    <script src="js/squareCountDownClock.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.paroller.js"></script>
+    <script src="js/script.js"></script>
+
+
+  </main>
+</body>
+
+</html>

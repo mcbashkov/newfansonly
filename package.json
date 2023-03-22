@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "gsap": "^3.11.5",
+    "jquery": "^3.6.4",
+    "scrollmagic": "^2.0.8",
+    "swiper": "^9.1.1",
+    "wowjs": "^1.1.3"
+  }
+}
